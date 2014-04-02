@@ -79,7 +79,6 @@ extern "C" {
                 return status;\
         }
 
-
 #define E_RETURN(status, args...) {\
                 ssod_printf(SSOD_ERROR, __FUNCTION__, ssod_error_string(status), ##args);\
                 return status;\
