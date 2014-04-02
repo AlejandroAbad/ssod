@@ -1,0 +1,48 @@
+SINGLE SIGN-ON DAEMON
+Daemon that will automatically obtain roaming TGTs when accessing a federated
+network while in a roaming realm.
+
+This software will search in all available interfaces with an active 
+wpa_supplicant control interface for a negotiated MSK to generate a
+username/password for the visited realm KDC.
+
+This is part of a project related to single sign-on authentication
+and authoritation for cloud access in federated scenarios, being developed
+in the Universiry of Murcia (Spain)
+
+
+AUTHOR
+--------------------------------------------------------------------------------
+Alejandro Abad Carrascosa <hankyago@gmail.com>
+April 2014, University of Murcia (Spain)
+
+
+UPDATES
+--------------------------------------------------------------------------------
+Latest version available in GitHub:
+https://github.com/AlejandroAbad/ssod
+
+
+LICENSE
+--------------------------------------------------------------------------------
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+
+COMPILING
+--------------------------------------------------------------------------------
+You can compile the sources using the make tool. Makefile has been built by
+Netbeans. Type 'make help' for options. All compiled sources will be under
+the 'dist/' folder.
+
+Dependencies:
+This software requires 'libfnasso' (library for federated network access single
+sign-on) to be installed in the system. The library is available in 
+https://github.com/AlejandroAbad/libfnasso

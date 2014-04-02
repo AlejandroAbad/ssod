@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="90">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="datastructs" projectFiles="true">
+        <itemPath>datastructs/iface.h</itemPath>
+        <itemPath>datastructs/listener.h</itemPath>
+        <itemPath>datastructs/realm.h</itemPath>
+        <itemPath>datastructs/ssod.h</itemPath>
+        <itemPath>datastructs/thread.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="third-party" projectFiles="true">
+        <itemPath>inih/ini.h</itemPath>
+        <itemPath>wpa_ctrl/wpa_ctrl.h</itemPath>
+      </logicalFolder>
+      <itemPath>debug.h</itemPath>
+      <itemPath>watchers/watchers.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f3" displayName="datastructs" projectFiles="true">
+        <itemPath>datastructs/error.c</itemPath>
+        <itemPath>datastructs/iface.c</itemPath>
+        <itemPath>datastructs/listener.c</itemPath>
+        <itemPath>datastructs/realm.c</itemPath>
+        <itemPath>datastructs/ssod.c</itemPath>
+        <itemPath>datastructs/thread.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="third-party" projectFiles="true">
+        <itemPath>inih/ini.c</itemPath>
+        <itemPath>wpa_ctrl/wpa_ctrl.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="watchers" projectFiles="true">
+        <itemPath>watchers/network.c</itemPath>
+      </logicalFolder>
+      <itemPath>debug.c</itemPath>
+      <itemPath>main.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>datastructs</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <preprocessorList>
+            <Elem>DEBUG_MODE</Elem>
+          </preprocessorList>
+        </cTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerOptionItem>-lfnasso</linkerOptionItem>
+            <linkerOptionItem>-lpthread</linkerOptionItem>
+            <linkerOptionItem>-lcom_err</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="datastructs/error.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="datastructs/iface.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="datastructs/iface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datastructs/listener.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="datastructs/listener.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datastructs/realm.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="datastructs/realm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datastructs/ssod.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="datastructs/ssod.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datastructs/thread.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="datastructs/thread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="debug.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="debug.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inih/ini.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="inih/ini.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="watchers/network.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="watchers/watchers.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wpa_ctrl/wpa_ctrl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wpa_ctrl/wpa_ctrl.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>6</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerOptionItem>-lfnasso</linkerOptionItem>
+            <linkerOptionItem>-lpthread</linkerOptionItem>
+            <linkerOptionItem>-lcom_err</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="datastructs/error.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="datastructs/iface.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="datastructs/iface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datastructs/listener.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="datastructs/listener.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datastructs/realm.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="datastructs/realm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datastructs/ssod.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="datastructs/ssod.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datastructs/thread.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="datastructs/thread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="debug.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="debug.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inih/ini.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="inih/ini.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="watchers/network.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="watchers/watchers.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wpa_ctrl/wpa_ctrl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wpa_ctrl/wpa_ctrl.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Trace" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <preprocessorList>
+            <Elem>TRACE_MODE</Elem>
+          </preprocessorList>
+        </cTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerOptionItem>-lfnasso</linkerOptionItem>
+            <linkerOptionItem>-lpthread</linkerOptionItem>
+            <linkerOptionItem>-lcom_err</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="datastructs/error.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="datastructs/iface.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="datastructs/iface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datastructs/listener.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="datastructs/listener.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datastructs/realm.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="datastructs/realm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datastructs/ssod.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="datastructs/ssod.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datastructs/thread.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="datastructs/thread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="debug.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="debug.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inih/ini.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="inih/ini.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="watchers/network.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="watchers/watchers.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wpa_ctrl/wpa_ctrl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="wpa_ctrl/wpa_ctrl.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
